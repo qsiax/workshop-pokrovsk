@@ -1,0 +1,105 @@
+// Import Start Setting
+@import '_fonts';
+@import '_reset';
+@import '_ui';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	scroll-padding-top: 100px;
+}
+
+html,
+body {
+	font-size: 16px; 
+	color: $text;
+	background: $main-color;
+	font-family: 'Inter', sans-serif;
+	overflow-x: hidden;
+	&::-webkit-scrollbar {
+		width: 0;
+	}
+	a {
+		text-decoration: none;
+		color: $main-color;
+	}
+	li {
+		list-style: none;
+	}
+}
+
+// General Container
+._container {
+	max-width: 1760px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+// Preloader
+.overlay-preloader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url(/source/banner-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	// filter: saturate(50%);
+	filter: hue-rotate(90deg);
+	overflow: hidden;
+}
+
+.overlay-preloader-el01 {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 101;
+	top: 0;
+	right: -100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: $main-color;
+}
+
+.overlay-preloader-text-wrapper {
+	position: relative;
+	width: 191px;
+	height: 60px;
+	overflow: hidden;
+}
+
+.overlay-preloader-logo {
+	position: absolute;
+	width: 0px;
+	height: 60px;
+	left: 0;
+	background: url(/source/logo.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-right: 40px;
+}
+
+// Import
+@import '_home';
+@import '_header';
+@import '_project';
+@import '_about';
+@import '_workshop';
+@import '_uslugi';
+@import '_carousel';
+@import '_banner';
+@import '_footer';
+
+// WEB-page
+@import '_gallery';
+@import '_directions';
+@import '_function';
+@import '_courses';

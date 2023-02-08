@@ -1,0 +1,162 @@
+.workshop {
+
+    &__container {
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;  
+        margin-bottom: 200px;
+        margin-top: 200;
+        position: relative; 
+    }
+
+    &__content {
+    }
+
+    &__sub {
+    }
+
+    &__num {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        margin-bottom: 40px;
+        color: $text-secondary;
+        span {
+            color: $text;
+        }
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        color: $text-secondary;
+        cursor: pointer;
+        transition: .02s ease;
+        p {
+            max-width: 631px;
+            min-width: 631px;
+            transition: .5s ease;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &.active {
+            color: $text;
+            .workshop__title-arrow {
+                visibility: visible;
+                opacity: 1;
+            }
+            p {
+                margin-right: 309px;
+            }
+        }
+    }
+
+    &__title-arrow {
+        width: 48px;
+        height: 48px;
+        background: url(/source/arrow-workshop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        visibility: hidden;
+        opacity: 0;
+        transition: .3s ease;
+    }
+
+    &__block {
+        width: 692px;
+        height: 765px;
+        border-radius: 25px;
+        border: 1px solid $text-secondary;
+        padding: 40px 80px;
+        position: absolute;
+        right: -50%;
+        background: $main-color;
+        transition: .6s ease;
+        &:nth-child(3) {
+            .workshop__block-logo {
+                background: url(/source/ws-01.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+        &:nth-child(4) {
+            .workshop__block-logo {
+                background: url(/source/ws-02.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+        &:nth-child(5) {
+            .workshop__block-logo {
+                background: url(/source/ws-04.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+        &:nth-child(6) {
+            .workshop__block-logo {
+                background: url(/source/ws-05.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+        &.active {
+            right: 0;
+        }
+    }
+
+    &__block-logo {
+        width: 292px;
+        height: 292px;
+        background: url(/source/ws-03.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0 auto;
+        
+    }
+
+    &__block-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        max-width: 532px;
+        margin-bottom: 80px;
+        margin-top: 80px;
+        span {
+            color: $text-secondary;
+        }
+    }
+
+    &__block-btn {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: $main-color;
+        background: $text;
+        border-radius: 50px;
+        padding: 20px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__block-btn-arrow {
+        width: 24px;
+        height: 24px;
+        background: url(/source/btn-arrow-workshop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: 10px;
+    }
+}

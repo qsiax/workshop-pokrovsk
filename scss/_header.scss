@@ -1,0 +1,121 @@
+.header {
+
+    * {
+        color: $main-color;
+    }
+    &__container {
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__block {
+        padding-top: 48px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 191px;
+        height: 60px;
+        background: url(/source/logo.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 40px;
+    }
+
+    &__logo-m {
+        width: 264px;
+        height: 60px;
+        background: url(/source/logo-m.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 40px;
+    }
+
+    &__logo-w {
+        width: 285.4px;
+        height: 60px;
+        background: url(/source/logo-w.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__navigation {
+        display: flex;
+        li {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 150%;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+            margin-right: 40px;
+            a {
+                position: relative;
+                &:hover::before {
+                    right: auto;
+                    width: 100%;
+                    left: 0;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    bottom: -5px;
+                    width: 0%;
+                    height: 2px;
+                    background: $main-color;
+                    transition: .6s ease;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        color: $text;
+        background: $main-color;
+        display: flex;
+        align-items: center;
+        transition: .5s ease;
+        &:hover {
+            background: url(/source/banner-bg.jpg) center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: $main-color;
+            .header__btn-arrow-wrapper {
+                .header__btn-arrow {
+                    background: url(/source/arrow-header-wh.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .header__btn-arrow:nth-child(1) {
+                    transform: translateX(0);
+                }
+                .header__btn-arrow:nth-child(2) {
+                    transform: translateX(100px);
+                }
+            }
+        }
+    }
+
+    &__btn-arrow-wrapper {
+        position: relative;
+        width: 25px;
+        height: 25px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+    }
+
+    &__btn-arrow {
+        position: absolute;
+        transition: .5s ease;
+        &:nth-child(1) {
+            transform: translateX(-100px);            
+        }
+    }
+}

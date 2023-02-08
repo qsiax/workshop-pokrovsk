@@ -1,0 +1,81 @@
+.footer {
+    background: $text;
+    &__container {
+        position: relative;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 80px;
+    }
+
+    &__wrapper {
+    }
+
+    &__logo {
+        width: 191px;
+        height: 60px;
+        background: url(/source/logo-wh.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__content {
+        display: flex;
+        padding-bottom: 136px;
+    }
+
+    &__block {
+
+        &:first-child {
+
+            .footer__navigation {
+                margin-right: 235px;
+            }
+        }
+        &:last-child {
+
+            .footer__navigation {
+                li {
+                    &:nth-child(1) {
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__nav-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        color: $text-secondary;
+        margin-bottom: 40px;
+    }
+
+    &__navigation {
+
+
+        li {
+            max-width: 315px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 120%;
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__copyright {
+        position: absolute;
+        bottom: 80px;
+        left: 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: $text-secondary;
+    }
+}

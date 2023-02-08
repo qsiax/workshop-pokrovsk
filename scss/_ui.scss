@@ -1,0 +1,42 @@
+$main-color: #ffff;
+$primary-color: #0F0C37;
+$secondary-color: #632EF2;
+$tertiary-color: none;
+$text: #000000;
+$text-secondary: #B1B1B1;
+$error: #ED0A34;
+$succes: #0284C7;
+$transition: all .5s ease;
+
+@mixin background {
+    background: conic-gradient(from 180deg at 50% 50%, #FF0000 0deg, #15C1C1 16.88deg, #FF0000 88.12deg, #85C2FF 151.87deg, #FF0000 225deg, #A6CCFA 288.75deg, #FF0000 360deg), radial-gradient(75.9% 75.96% at 15.53% 6.21%, #0500FF 7.61%, #0500FF 35.14%, #FD5B00 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    background-blend-mode: screen, normal;
+}
+
+.btn {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    background: $text;
+    padding: 20px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.sub {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    margin-bottom: 40px;
+}
+
+.btn-arrow {
+    width: 24px;
+    height: 24px;
+    background: url(/source/btn-arrow-header.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

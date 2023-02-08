@@ -1,0 +1,70 @@
+.carousel {
+
+    &__body {
+        margin-bottom: 200px;
+        margin-top: 80px;
+    }
+
+    &__track {
+    }
+
+    &__item {
+        display: flex;
+        overflow: hidden;
+        &:nth-child(2) {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            .carousel__text {
+                animation: carousel03 60s linear infinite;
+            }
+        }
+        &:last-child {
+            .carousel__text {
+                animation: carousel02 60s linear infinite;
+            } 
+        }
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: 150px;
+        line-height: 90%;
+        letter-spacing: -0.03em;
+        white-space: nowrap;
+        animation: carousel01 60s linear infinite;
+        margin-right: 20px;
+        background-image: url(/source/black.jpg);
+        background-clip: text;
+        -webkit-text-stroke-color: transparent;
+        -webkit-text-stroke-width: calc(1em / 32);
+        -webkit-background-clip: text;
+        color: $main-color;
+        cursor: pointer;
+        height: 165px;
+        span {
+            transition: .3s ease;
+            &:hover {
+                color: $text;
+                background-image: none;
+            }
+        }
+    }
+}
+
+@keyframes carousel01 {
+    100% {
+        transform: translateX(-8000px);
+    }
+}
+
+@keyframes carousel02 {
+    100% {
+        transform: translateX(-14000px);
+    }
+}
+
+@keyframes carousel03 {
+    100% {
+        transform: translateX(-6000px);
+    }
+}

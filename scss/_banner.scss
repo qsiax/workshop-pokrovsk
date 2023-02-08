@@ -1,0 +1,55 @@
+.banner {
+    background: url(/source/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    * {
+        color: $main-color;
+    }
+    &__container {
+    }
+
+    &__body {
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 150px;
+        line-height: 90%;
+        letter-spacing: -0.03em;
+        margin-top: 80px;
+        margin-bottom: 301px;
+        max-width: 1600px;
+    }
+
+    &__block {
+        margin-left: 1068px;
+        padding-bottom: 120px;
+    }
+
+    &__block-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        margin-bottom: 40px;
+    }
+
+    &__btn {
+        background: $main-color;
+        color: $text;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        padding: 20px 30px;
+        border-radius: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    &__btn-arrow {
+    }
+}

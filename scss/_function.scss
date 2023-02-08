@@ -1,0 +1,38 @@
+.function {
+
+    &__container {
+    }
+
+    &__body {
+        margin-bottom: 200px;
+        margin-top: 200px;
+    }
+
+    &__block {
+    }
+
+    &__sub {
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        max-width: 700px;
+    }
+}
